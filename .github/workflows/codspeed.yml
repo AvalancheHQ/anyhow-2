@@ -21,7 +21,7 @@ jobs:
         cache-target: release
         bins: cargo-codspeed
     - name: Build the benchmark target(s)
-      run: cargo codspeed build
+      run: cargo codspeed build --features divan
     - name: Run the benchmarks
       uses: CodSpeedHQ/action@v4
       with:
